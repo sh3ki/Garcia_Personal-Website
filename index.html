@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GARCIA - Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">sh3ki</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">sh3ki</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jedidia Shekainah P. Garcia</h1>
+        <p class="section__text__p2">Full Stack Web Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br /> Student Programmer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>BS Information Technology<br />Senior High School Graduate</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              As a third-year Bachelor of Science in Information Technology student, I have developed a strong foundation in programming, web development, and system design. My hands-on experience includes creating full-stack web applications, building REST APIs, and working with various programming languages such as Java, PHP, and Python. I am passionate about problem-solving and continually enhancing my skills in software development to deliver efficient and creative solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experiences</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Check Out My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-container">
+        <div class="skill-details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/programming.png"
+              alt="Programming Skill"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Programming Skills</h2>
+          <p>Proficient in languages like Java, Python, and PHP with a focus on building backend solutions.</p>
+        </div>
+        <div class="skill-details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/web-development.png"
+              alt="Web Development Skill"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Full Stack Web Development</h2>
+          <p>Experienced in frontend and backend web development using technologies like HTML, CSS, JavaScript, Laravel, and Spring Boot.</p>
+        </div>
+        <div class="skill-details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/database.png"
+              alt="Database Management Skill"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Database Management</h2>
+          <p>Skilled in MySQL and database design for efficient and scalable data storage solutions.</p>
+        </div>
+      </div>
+      <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#contact'"
+    />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-gif">
+        <img
+        src="./assets/contact.gif"
+        alt="contact icon"
+        class="icon contact-icon"
+      />
+      </div>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-row">
+          <div class="contact-info-container">
+            <img
+              src="./assets/facebook.png"
+              alt="Facebook icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.facebook.com/jedidiashekainah.garcia.92" target="_blank">Jedidia Shekainah P. Garcia</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=shekaigarcia@gmail.com" target="_blank">shekaigarcia@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="contact-info-row">
+          <div class="contact-info-container">
+            <img
+              src="./assets/phone.png"
+              alt="Phone icon"
+              class="icon contact-icon"
+            />
+            <p><a href="tel:09565934460" target="_blank">09565934460</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/location.png"
+              alt="Location icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.google.com/maps/place/14%C2%B010'27.6%22N+121%C2%B019'59.0%22E/@14.1742073,121.3316856,18.21z/data=!4m13!1m8!3m7!1s0x33bd5f4122db82d9:0x4471024e534157e5!2sVictoria,+Laguna!3b1!8m2!3d14.196781!4d121.3427262!16s%2Fg%2F11fyxbmrm3!3m3!8m2!3d14.174329!4d121.333054?entry=ttu&g_ep=EgoyMDI0MTAxNC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Dayap, Calauan, Laguna</a></p>
+          </div>
+        </div>
+      </div>
+      <img
+      src="./assets/arrow-up.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#desktop-nav'"
+    />
+    </section>
+    <footer>
+      <p>Copyright &#169; 2024 Garcia-Website. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

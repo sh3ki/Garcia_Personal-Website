@@ -1,0 +1,463 @@
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color:#49243E;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color:#49243E;
+}
+
+html {
+  scroll-behavior: smooth;
+  color: #DBAFA0;
+}
+
+p {
+  color: #DBAFA0;
+}
+
+/* TRANSITION */
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.25rem;
+  margin-right: 3rem;
+}
+
+a {
+  color: #DBAFA0;
+  text-decoration: none;
+  text-decoration-color: #DBAFA0;
+}
+
+a:hover {
+  color: #BB8493;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: #BB8493;
+}
+
+.logo {
+  font-size: 1.5rem;
+  margin-left: 5rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+  margin-right: 3rem;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: #DBAFA0;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: transparent;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+  z-index: 100;
+}
+
+.menu-links a {
+  display: block;
+  background-color: transparent;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.25rem;
+  color: #DBAFA0;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+  background-color: transparent;
+}
+
+.menu-links.open {
+  background-color: transparent;
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+/* SECTIONS */
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+  transform: scaleX(-1);
+  z-index: 1;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+  color: #DBAFA0;
+}
+
+.section__text__p1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* ICONS */
+
+.icon {
+  color: #DBAFA0;
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: #704264 0.2rem solid;
+  color: #DBAFA0;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+  background: #DBAFA0;
+  color: #49243E;
+}
+
+.btn-color-1:hover {
+  border: #704264 0.1rem solid;
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: #704264 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  position: relative;
+}
+
+.about-containers {
+  white-space: nowrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  display: flex;
+}
+
+.about-details-container .icon{
+  height: 5rem;
+  width: 5rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.text-container{
+  text-align: justify;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1rem;
+  flex: 1;
+  background: #49243E;
+  border-radius: 2rem;
+  border: #DBAFA0 0.1rem solid;
+  border-color: #BB8493;
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+/* EXPERIENCE SECTION */
+
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: #DBAFA0;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+/* SKILLS SECTION */
+
+#skills {
+  position: relative;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill-details-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  border: 0.1rem solid #BB8493;
+  width: 30%;
+}
+
+.project-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+/* CONTACT */
+
+#contact {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+  padding-top: 0.25rem;
+}
+
+.contact-gif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-gif .contact-icon{
+  height: 17rem;
+  width: 17rem;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  border: #704264 0.1rem solid;
+  border-color: #BB8493;
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-row {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 6vh;
+}
+
+footer p {
+  text-align: center;
+}
